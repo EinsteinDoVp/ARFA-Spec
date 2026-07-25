@@ -4,7 +4,7 @@ Closed-Loop Epistemic Containment & Dynamic Autonomy Modulation
 • Author: Matheus Henrique Almerindo
 • Role: Independent Researcher & AI Systems Architect
 • Location: João Monlevade, MG – Brazil
-• Contact: z84566663@gmail.com | LinkedIn Profile
+• Contact: z84566663@gmail.com | LinkedIn: https://www.linkedin.com/in/matheus-almerindo-768044407
 📌 Executive Summary
 Modern AI safety and governance frameworks often rely on static policy engines or reactive detection of concept drift. As autonomous agents operate in increasingly volatile environments, a major challenge emerges: Epistemic Drift (\Delta E) , where the system's internal assumptions about environmental dynamics diverge from reality.
 The Adaptive Relational Field Architecture (ARFA) is a research-stage architecture designed to enforce Autonomous Restraint under Changing Reality. Rather than shutting down system capabilities post-failure, ARFA predicts structural topological mutations in execution environments and dynamically modulates the system's operational autonomy using a closed-loop sigmoidal control mechanism.
