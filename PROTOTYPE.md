@@ -1,38 +1,40 @@
-# ARFA Prototype 0.1
+# ARFA Prototype 0.2
 
-This branch turns a limited part of the ARFA specification into executable,
-testable reference code.
+This repository contains an executable research baseline derived from a limited
+subset of the ARFA specification.
 
-## Scope
-
-Implemented:
-- a lightweight proxy for epistemic drift;
+## Implemented
+- lightweight proxy for epistemic drift;
 - sigmoidal autonomy modulation;
-- a simple Safety Retention Index (SRI) proxy;
-- unit tests for basic invariants.
+- simple Safety Retention Index proxy;
+- deterministic synthetic cascade environment;
+- reproducible baseline experiment;
+- minimal fixed-autonomy ablation;
+- unit tests and GitHub Actions CI.
 
-Not implemented yet:
+## Not implemented yet
 - Temporal GNN prediction;
 - Granger Causality / Directed Mutual Information initialization;
 - Jensen-Shannon Divergence as specified;
 - adaptive threshold learning;
-- synthetic cascade-failure environment;
-- ablation studies or empirical comparison with guardrails.
+- stochastic multi-seed experiments;
+- external or real-world validation.
 
 ## Scientific status
-
-This is a **research prototype**, not a validated safety system. No empirical
-performance or safety claims should be inferred from the existence of this
-code.
+This is a **research prototype**, not a validated safety system. Results from
+the included experiments describe behavior in the repository's synthetic
+environment only.
 
 ## Run locally
 
 ```bash
 python -m pip install pytest
 pytest
+PYTHONPATH=src python experiments/run_baseline.py
+PYTHONPATH=src python experiments/run_ablation.py
 ```
 
 ## Next milestone
-
-Prototype 0.2 should add a reproducible synthetic environment and experiment
-runner, then report raw results before making comparative claims.
+Prototype 0.3 will move the implemented metrics closer to the written
+specification, add parameter sweeps and machine-readable outputs, and expand
+the ablation methodology. See `ROADMAP.md`.
