@@ -1,0 +1,9 @@
+[project]
+name = "arfa-prototype"
+version = "0.1.0"
+description = "Research prototype for Adaptive Relational Field Architecture (ARFA)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
